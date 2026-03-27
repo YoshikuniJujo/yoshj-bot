@@ -1,1 +1,4 @@
-runtime: docker
+services:
+  - type: worker
+  - name: yoshj-bot
+  - runtime: docker
