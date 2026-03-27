@@ -38,7 +38,8 @@ main = do
 
 ws :: Event.Secret -> Event.Pub -> ClientApp ()
 ws sk pk cnn = do
-	let	req0 = req "foobar12345" FlJsn.null
+	let	req0 = req "foobar12345" FlJsn.null {
+			kinds = Just [1] }
 	sendTextData cnn req0
 	forever do
 		rdt <- receiveData cnn

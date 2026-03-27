@@ -28,4 +28,4 @@ RUN stack install
 
 WORKDIR "/opt/yoshj-bot-run"
 
-CMD ["reply", "secure", "yabu.me", "443", "nsec", "npub"]
+CMD ["reply", "secure", "relay.nostr.wirednet.jp", "443", "nsec", "npub"]
